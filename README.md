@@ -25,9 +25,15 @@ The ENC signal functions as a flag during signature generation in the Serial Inp
 generation, the ENC signal transitions to a high state. Consequently, the detection of a high ENC signal by the comparator or memory indicates that a signature has been successfully generated at
 the output of the SISR. <br> <br>
 
+## Pattern Generator (PG) and Serial Input Shift Register (SISR)
+![LFSR Type 1](https://github.com/user-attachments/assets/5f1a0c3d-2ba7-4715-8ff8-3f03fd980dca) <br> Fig 2: LFSR Type 1 for Pattern Generation <br><br>
+
+![SISR-LFSR Type 2 drawio](https://github.com/user-attachments/assets/248634c8-8428-4465-8b19-bdb3b95f163f) <br> Fig 3: LFSR Type 2 used as an SISR for response compaction <br><br>
+
+
 ## Simulation Waveform
 
-![image](https://github.com/user-attachments/assets/9a9cd20b-97dc-4dbf-922f-2a3cd90b5c54)  <br> Fig 2: Simulation Waveform <br><br>
+![image](https://github.com/user-attachments/assets/9a9cd20b-97dc-4dbf-922f-2a3cd90b5c54)  <br> Fig 4: Simulation Waveform <br><br>
 
 In this simulation, we implement a Built-In Self-Test (BIST) architecture with two modes. In the first mode, we create 14 distinct patterns using Linear Feedback Shift Register (LFSR) and
 obtain corresponding golden signatures for each pattern. These golden signatures are stored in a memory array of size 4 x 14. <br>
